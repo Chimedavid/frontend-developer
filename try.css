@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px; 
+    /* border-bottom: 1px solid #000000; */
+    background-color: #ffffff;
+    position: relative;
+    z-index: 99;
+    background-color: rgb(252, 244, 244);
+    margin-bottom: 20%;
+}
+
+.left{
+    display: flex;
+    gap: 50px;
+}
+.brand{
+   font-weight: bold;
+   font-size: 20px; 
+}
+.nav-items{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-top: 4px;
+}
+.nav-items .nav-link{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+.right{
+    display: flex;
+    gap: 20px;
+    padding-top: 3px;
+}
+.right a{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.right .register{
+    border: 1px solid #000000;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000000;
+}
+.right .login{
+   padding-top: 5px;
+   color: #000000;
+}
+
+/* DROPDOWN */
+.nav-items li{
+    position: relative;
+    z-index: 11111;
+}
+.nav-items .dropdown{
+    background-color: rgb(235, 230, 230);
+    list-style: none;
+    position: absolute;
+    padding: 30px;
+    padding-top: 15px;
+    line-height: 30px;
+    border-radius: 15px;
+    width: 75px;
+    left: -600px;
+    /* transform: scale(0); */
+    transition: 1s;
+    z-index: -99;
+}
+.nav-items li:hover .dropdown{
+    left: -35px;
+    /* transform: scale(1); */
+}
+
+.dropdown2{
+    list-style: none;
+    line-height: 30px;
+    position: absolute;
+    padding-top: 10px;
+    background-color: rgb(207, 196, 196);
+    padding: 30px 30px;
+    border-radius: 10px;
+    height: 60px;
+    left: -500px;
+    transition: 1s;
+    z-index: 99;
+    
+}
+.nav-link2{
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    bottom: 19px !important;
+    color: black !important;
+
+}
+.nav-items li:hover .dropdown2{
+   left: 3px;
+}
+.animate__animated.animate__zoomInUp {
+    --animate-duration: 5s;
+  }
+.animate__animated.animate__backInRight{
+    animation-duration:4s;
+}
+.word{
+    /* margin-top: 30px !important; */
+    
+}
+span{
+    font-size: 50px;
+    font-weight: bolder;
+    
+}
+
+.img{
+    height: 500px;
+    width: 400px;
+    padding-left:300px;
+}
+body{
+    overflow-y: hidden;
+    background-color: rgb(252, 244, 244);
+}
+.yes{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
